@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@repo/commit-config':
+        specifier: workspace:^
+        version: link:packages/config-commit
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:packages/config-eslint
