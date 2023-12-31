@@ -1,12 +1,16 @@
 {
+  "name": "turborepo_template",
+  "version": "0.0.1",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "commit": "cz",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
@@ -17,6 +21,7 @@
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "prettier": "^3.1.1",
+    "standard-version": "^9.5.0",
     "turbo": "^1.11.2"
   },
   "engines": {
