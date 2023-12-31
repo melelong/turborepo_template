@@ -29,8 +29,8 @@ module.exports = [
     value: 'doc',
   },
   {
-    name: '测试相关的修改范围 (testing)',
-    value: 'testing',
+    name: '测试相关的修改范围 (test)',
+    value: 'test',
   },
   {
     name: '配置相关的修改范围 (config)',
