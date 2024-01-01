@@ -1,5 +1,5 @@
 // 导入 ESLint 包，以便使用 ESLint 类对文件执行代码质量检查
-const { ESLint } = require('eslint');
+import { ESLint } from 'eslint'
 
 /**
  * 从提供的文件数组中移除那些被 ESLint 配置忽略的文件。

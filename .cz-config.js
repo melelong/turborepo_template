@@ -1,2 +1,2 @@
-const { cz } = require('@repo/commit-config')
+import { cz } from '@repo/commit-config'
 module.exports = cz;
