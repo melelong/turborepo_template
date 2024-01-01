@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "commit": "cz",
+    "docker:start": "docker-compose up",
+    "docker:stop": "docker-compose stop",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
