@@ -1,6 +1,6 @@
 const cz = require('./cz');
-const commitlint = require('./commitlint');
+const commitLint = require('./commitLint');
 module.exports = {
   cz,
-  commitlint,
+  commitLint,
 };

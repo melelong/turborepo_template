@@ -26,6 +26,7 @@ const removeIgnoredFiles = async (files) => {
 module.exports = {
   // 这里特别针对 JavaScript 和 TypeScript 文件，包括 JSX 和 TSX 变体
   '*.{js,jsx,ts,tsx}': async (files) => {
+    console.log('执行');
     // 首先移除被 ESLint 忽略的文件
     const filesToLint = await removeIgnoredFiles(files);
 

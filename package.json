@@ -10,6 +10,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "test": "node test.js",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --config .prettierrc",
     "prepare": "husky install",
     "release": "standard-version"
@@ -21,10 +22,10 @@
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
     "eslint": "^8.56.0",
+    "husky": "^8.0.3",
     "prettier": "^3.1.1",
     "standard-version": "^9.5.0",
-    "turbo": "^1.11.2",
-    "husky": "^8.0.0"
+    "turbo": "^1.11.2"
   },
   "engines": {
     "node": "=20.10.0",
