@@ -1,5 +1,5 @@
-import cz from './cz';
-import commitlint from './commitlint';
+const cz = require('./cz');
+const commitlint = require('./commitlint');
 module.exports = {
   cz,
   commitlint,

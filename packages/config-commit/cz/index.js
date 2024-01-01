@@ -1,6 +1,6 @@
-import types from './types';
-import scopes from './scopes';
-import messages from './messages';
+const types = require('./types')
+const scopes = require('./scopes')
+const messages = require('./messages')
 module.exports = {
   allowBreakingChanges: ['feat', 'fix'],
   allowCustomScopes: true,

@@ -2,4 +2,5 @@
 module.exports = {
   root: true,
   extends: ["@repo/eslint-config/index.js"],
+  ignorePatterns: ['node_modules/', 'packages/config-commit/**']
 };

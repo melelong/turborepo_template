@@ -7,4 +7,4 @@ module.exports = {
   body: '请输入详细描述(可选):',
   footer: '请输入要关闭的issue(可选):',
   confirmCommit: '确认使用以上信息提交？(y/n/e/h)',
-}
+};
