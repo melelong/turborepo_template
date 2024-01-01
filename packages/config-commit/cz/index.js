@@ -1,6 +1,6 @@
-const types = require('./types')
-const scopes = require('./scopes')
-const messages = require('./messages')
+const types = require('./types');
+const scopes = require('./scopes');
+const messages = require('./messages');
 module.exports = {
   allowBreakingChanges: ['feat', 'fix'],
   allowCustomScopes: true,
