@@ -10,7 +10,7 @@ const { ESLint } = require('eslint')
 const removeIgnoredFiles = async (files) => {
   // 实例化 ESLint
   const eslint = new ESLint();
-
+  console.log('执行');
   // 使用 map 方法对每个文件路径调用 isPathIgnored 方法来确定其是否被 ESLint 忽略
   // Promise.all 等待所有的异步检查操作完成
   const ignoredFiles = await Promise.all(files.map((file) => eslint.isPathIgnored(file)));
