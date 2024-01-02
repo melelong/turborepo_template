@@ -11,7 +11,7 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "node test.js",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\" --config .prettierrc",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\" --config .prettierrc.js --ignore-path .prettierignore",
     "prepare": "husky install",
     "release": "standard-version"
   },
@@ -19,6 +19,7 @@
     "@commitlint/cli": "^18.4.3",
     "@repo/commit-config": "workspace:^",
     "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:^",
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
     "eslint": "^8.56.0",

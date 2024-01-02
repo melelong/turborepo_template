@@ -19,7 +19,7 @@ services:
       - template_mysql
       - template_redis
     ports:
-      - '3000:3000'
+      - '3001:3001'
     networks:
       app_network:
         ipv4_address: 192.168.3.2
@@ -90,3 +90,17 @@ services:
     networks:
       app_network:
         ipv4_address: 192.168.3.6
+
+  # nuxt3
+  template_nuxt3:
+      # 自动重启
+      restart: always
+      container_name: template_nuxt3
+      build:
+        context: .
+        dockerfile: ./apps/nuxt3/Dockerfile
+      ports:
+        - '3000:3000'
+      networks:
+        app_network:
+          ipv4_address: 192.168.3.7

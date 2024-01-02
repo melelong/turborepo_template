@@ -72,4 +72,5 @@ pnpm build
 - [Husky](https://typicode.github.io/husky)操作git hooks
 - [Commitizen](https://commitizen.github.io/cz-cli)提供git commit模板
 - [Commitlint](https://commitlint.js.org/#/)检测git commit规范
-- [lint-staged](https://github.com/lint-staged/lint-staged)对git commit 后暂存区的代码进行操作
+- [lint-staged](https://github.com/lint-staged/lint-staged)对git commit 后暂存区
+  的代码进行操作

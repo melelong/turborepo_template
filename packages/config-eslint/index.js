@@ -1,22 +1,3 @@
-// module.exports = {
-//   env: {
-//     node: true,
-//   },
-//   parser: "@typescript-eslint/parser",
-//   extends: [
-//     "eslint:recommended",
-//     "plugin:@typescript-eslint/recommended",
-//     "prettier",
-//   ],
-//   plugins: ["@typescript-eslint"],
-//   parserOptions: {
-//     sourceType: "module",
-//     ecmaVersion: 2020,
-//   },
-//   rules: {
-//     "@typescript-eslint/no-non-null-assertion": "off",
-//   },
-// };
 module.exports = {
   // 该配置项主要用于指示此.eslintrc文件是Eslint在项目内使用的根级别文件，并且 ESLint 不应在该目录之外搜索配置文件
   root: true,

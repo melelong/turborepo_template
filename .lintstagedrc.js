@@ -10,7 +10,7 @@ const { ESLint } = require('eslint');
 const removeIgnoredFiles = async (files) => {
   // 实例化 ESLint
   const eslint = new ESLint();
-  console.log('执行');
+  console.log('过滤文件');
   // 使用 map 方法对每个文件路径调用 isPathIgnored 方法来确定其是否被 ESLint 忽略
   // Promise.all 等待所有的异步检查操作完成
   const ignoredFiles = await Promise.all(
@@ -28,16 +28,15 @@ const removeIgnoredFiles = async (files) => {
 module.exports = {
   // 这里特别针对 JavaScript 和 TypeScript 文件，包括 JSX 和 TSX 变体
   '*.{js,jsx,ts,tsx}': async (files) => {
-    console.log('执行');
     // 首先移除被 ESLint 忽略的文件
     const filesToLint = await removeIgnoredFiles(files);
-
+    console.log('执行命令');
     // 返回一个命令数组，其中包含了调用 ESLint 和 Prettier 的命令
     // npx eslint ... --fix 参数会自动修复可以修复的问题
     // npx prettier -w ... 将格式化代码，-w 代表写入更改
     return [
       `npx eslint ${filesToLint} --max-warnings=0 --fix`,
-      `npx prettier --config .prettierrc . -w`,
+      `npx prettier --config .prettierrc.js . -w`,
     ];
   },
 };
