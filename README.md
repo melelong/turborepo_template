@@ -14,6 +14,11 @@
 pnpm dev
 ```
 
+#### 升级版本
+```sh
+pnpm release
+```
+
 #### 全部子项目启动
 
 ```sh
@@ -58,6 +63,8 @@ pnpm build
 
 - `docs`: 基于 [vite](https://vitejs.dev) 的 TypeScript 应用程序
 - `web`: 另一个基于 [vite](https://vitejs.dev) 的 TypeScript 应用程序
+- `nuxt3`：基于 [nuxt3](https://nuxt.com/) 的 TypeScript 应用程序
+- `service`：基于 [nest](https://nestjs.com/) 的  TypeScript 服务端接口程序
 - `ui`: 由 `web` 和 `docs` 应用程序共享的组件和实用工具库
 - `eslint-config-custom`: 共享的 `ESLint` 配置
 - `tsconfig`: 整个 Monorepo 中使用的 `tsconfig.json` 文件

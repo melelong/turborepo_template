@@ -93,14 +93,14 @@ services:
 
   # nuxt3
   template_nuxt3:
-      # 自动重启
-      restart: always
-      container_name: template_nuxt3
-      build:
-        context: .
-        dockerfile: ./apps/nuxt3/Dockerfile
-      ports:
-        - '3000:3000'
-      networks:
-        app_network:
-          ipv4_address: 192.168.3.7
+    # 自动重启
+    restart: always
+    container_name: template_nuxt3
+    build:
+      context: .
+      dockerfile: ./apps/nuxt3/Dockerfile
+    ports:
+      - '3000:3000'
+    networks:
+      app_network:
+        ipv4_address: 192.168.3.7
