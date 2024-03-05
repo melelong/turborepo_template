@@ -36,7 +36,7 @@ WORKDIR /app
 RUN npm i -g pnpm
 
 # 复制项目代码和配置文件到容器中
-COPY .gitignore .gitignore
+COPY .gitignore ./.gitignore
 COPY --from=builder /app/out/json/ .
 COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 
@@ -47,7 +47,7 @@ RUN pnpm install
 COPY --from=builder /app/out/full/ .
 
 # 复制 Turbo 配置文件到容器中
-COPY turbo.json turbo.json
+COPY turbo.json ./turbo.json
 
 # 使用 Turbo 工具构建项目
 RUN pnpm turbo build --filter=nuxt3...
