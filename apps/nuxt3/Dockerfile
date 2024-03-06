@@ -46,7 +46,7 @@ RUN pnpm install
 # 复制编译后的代码到容器中
 COPY --from=builder /app/out/full/ .
 # 复制 Turbo 配置文件到容器中
-COPY ./turbo.json ./turbo.json
+COPY turbo.json ./turbo.json
 
 # 使用 Turbo 工具构建项目
 RUN pnpm turbo build --filter=nuxt3...
